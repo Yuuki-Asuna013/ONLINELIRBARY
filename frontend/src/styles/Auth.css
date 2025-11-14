@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Container */
+.auth-container {
+    background: linear-gradient(135deg, #ffffff, #f3f7ff);
+    max-width: 420px;
+    margin: 80px auto;
+    padding: 45px;
+    border-radius: 28px;
+    box-shadow: 0 25px 55px rgba(0, 0, 0, 0.08);
+    border: 1px solid #d7e2f3;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Title */
+.auth-container h2 {
+    text-align: center;
+    color: var(--royal-blue);
+    margin-bottom: 28px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -0.7px;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.05);
+}
+
+/* Form layout */
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Inputs */
+.auth-container input,
+.auth-container select {
+    padding: 15px 17px;
+    background: #f7faff; 
+    border: 2px solid #e0e8f5;
+    border-radius: 18px;
+    font-family: "Poppins", sans-serif;
+    color: var(--royal-blue);
+    font-weight: 500;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Input Hover */
+.auth-container input:hover,
+.auth-container select:hover {
+    background: #ffffff;
+    border-color: #b8c9e8;
+}
+
+/* Input Focus */
+.auth-container input:focus,
+.auth-container select:focus {
+    background: white;
+    border-color: var(--royal-blue);
+    box-shadow: 0 0 8px rgba(0, 61, 140, 0.25);
+}
+
+/* Button */
+.auth-container button {
+    background: linear-gradient(135deg, var(--royal-blue), var(--royal-blue-dark));
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin-top: 5px;
+    box-shadow: 0 10px 20px rgba(0, 51, 102, 0.25);
+    transition: all 0.35s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+/* Button Hover */
+.auth-container button:hover {
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 15px 30px rgba(0, 51, 102, 0.45);
+    
+}
+
+/* Small fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
